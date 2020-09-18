@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="312dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:context=".MainActivity">
+
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#575656"
+                android:ems="10"
+                android:hint="First name"
+                android:inputType="textCapWords"
+                android:textColor="#FF888484"
+                android:textColorHint="#FF888484"
+                android:textColorLink="#ff212121" />
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF575656"
+                android:ems="10"
+                android:hint="Last name"
+                android:inputType="textCapWords"
+                android:text=""
+                android:textColor="#FF888484"
+                android:textColorHint="#FF888484"
+                android:textColorLink="#ff212121" />
+
+            <EditText
+                android:id="@+id/passWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF575656"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:text=""
+                android:textColor="#FF888484"
+                android:textColorHint="#FF888484"
+                android:textColorLink="#ff212121" />
+
+            <EditText
+                android:id="@+id/passCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF575656"
+                android:ems="10"
+                android:hint="Repeat password"
+                android:inputType="textPassword"
+                android:text=""
+                android:textColor="#FF888484"
+                android:textColorHint="#FF888484"
+                android:textColorLink="#ff212121" />
+
+            <EditText
+                android:id="@+id/birthDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF575656"
+                android:clickable="true"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Birthday"
+                android:inputType=""
+                android:text=""
+                android:textColor="#FF888484"
+                android:textColorHint="#888484" />
+
+            <Button
+                android:id="@+id/buttonReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="#40A644"
+                android:enabled="false"
+                android:text="Registration"
+                android:textColor="#F6EEEE" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:layout_marginBottom="35dp"
+            android:scrollbarSize="4dp"
+            android:text="Registration"
+            android:textColor="#E6DBDB"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
